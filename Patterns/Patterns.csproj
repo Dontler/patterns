@@ -52,6 +52,11 @@
     <Compile Include="Lib\Factory\Vehicles\Motorcycle.cs" />
     <Compile Include="Lib\Factory\Vehicles\Vehicle.cs" />
     <Compile Include="Lib\Factory\Vehicles\VehicleType.cs" />
+    <Compile Include="Lib\Observer\ObserverTest.cs" />
+    <Compile Include="Lib\Observer\RuTube\Channel.cs" />
+    <Compile Include="Lib\Observer\RuTube\Subscriber.cs" />
+    <Compile Include="Lib\Observer\RuTube\Unsubscriber.cs" />
+    <Compile Include="Lib\Observer\RuTube\Video.cs" />
     <Compile Include="Lib\Singleton\Entity.cs" />
     <Compile Include="Lib\Singleton\SingletonTest.cs" />
     <Compile Include="Program.cs" />
