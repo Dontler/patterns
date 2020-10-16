@@ -13,7 +13,7 @@ namespace Patterns.Lib.AbstractFactory
                 var nationality = rand.Next(0, 2) == (int) Nationality.Russian ? Nationality.Russian : Nationality.American;
                 var mother = GenerateMother(nationality);
                 var human = mother.GiveBirth();
-                Console.WriteLine(human.FirstWord());
+                Console.WriteLine(human.SayFirstWord());
             }
         }
 

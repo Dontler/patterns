@@ -14,7 +14,7 @@ namespace Patterns.Lib.Factory
                 case VehicleType.Motorcycle:
                     return new Motorcycle();
                 default:
-                    throw new AggregateException("Not supported vehicle type!");
+                    throw new ArgumentException("Not supported vehicle type!");
             }
         } 
     }

@@ -2,6 +2,6 @@
 {
     public abstract class Human
     {
-        public abstract string FirstWord();
+        public abstract string SayFirstWord();
     }
 }

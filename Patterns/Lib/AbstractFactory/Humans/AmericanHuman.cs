@@ -2,7 +2,7 @@
 {
     public class AmericanHuman: Human
     {
-        public override string FirstWord()
+        public override string SayFirstWord()
         {
             return "Mother!";
         }

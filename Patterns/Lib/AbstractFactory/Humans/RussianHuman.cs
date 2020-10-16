@@ -4,7 +4,7 @@ namespace Patterns.Lib.AbstractFactory.Humans
 {
     public class RussianHuman: Human
     {
-        public override string FirstWord()
+        public override string SayFirstWord()
         {
             return "Мама!";
         }
