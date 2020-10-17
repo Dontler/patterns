@@ -39,7 +39,7 @@ namespace Patterns.Lib.Iterator.Logger
 
         public void WriteGoodLog(string message)
         {
-            if (!IsLogsLoaded())
+            if (!AreLogsLoaded())
             {
                 throw new Exception("Logs not loaded!");
             }
@@ -47,13 +47,12 @@ namespace Patterns.Lib.Iterator.Logger
             var currentDateTime = DateTime.Now.ToString("g");
             var logText = $"{GoodLogQualifier}{currentDateTime}:: Хорошая запись: {message}\n";
             
-            _logs.Add(logText);
             WriteLog(logText);
         }
 
         public void WriteBadLog(string message)
         {
-            if (!IsLogsLoaded())
+            if (!AreLogsLoaded())
             {
                 throw new Exception("Logs not loaded!");
             }
@@ -61,7 +60,6 @@ namespace Patterns.Lib.Iterator.Logger
             var currentDateTime = DateTime.Now.ToString("g");
             var logText = $"{BadLogQualifier}{currentDateTime}:: Плохая запись: {message}\n";
             
-            _logs.Add(logText);
             WriteLog(logText);
         }
 
@@ -72,9 +70,11 @@ namespace Patterns.Lib.Iterator.Logger
             {
                 fs.Write(messageBytes, 0, messageBytes.Length);
             }
+            
+            _logs.Add(message);
         }
 
-        private bool IsLogsLoaded()
+        private bool AreLogsLoaded()
         {
             return _logs != null;
         }
