@@ -52,6 +52,10 @@
     <Compile Include="Lib\Factory\Vehicles\Motorcycle.cs" />
     <Compile Include="Lib\Factory\Vehicles\Vehicle.cs" />
     <Compile Include="Lib\Factory\Vehicles\VehicleType.cs" />
+    <Compile Include="Lib\Iterator\IteratorTest.cs" />
+    <Compile Include="Lib\Iterator\Logger\GoodBadLogger.cs" />
+    <Compile Include="Lib\Iterator\Logger\GoodBadLoggerIterator.cs" />
+    <Compile Include="Lib\Iterator\Logger\LogType.cs" />
     <Compile Include="Lib\Observer\ObserverTest.cs" />
     <Compile Include="Lib\Observer\RuTube\Channel.cs" />
     <Compile Include="Lib\Observer\RuTube\Subscriber.cs" />

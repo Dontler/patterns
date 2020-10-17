@@ -1,6 +1,7 @@
 ﻿using System;
 using Patterns.Lib.AbstractFactory;
 using Patterns.Lib.Factory;
+using Patterns.Lib.Iterator;
 using Patterns.Lib.Observer;
 using Patterns.Lib.Singleton;
 
@@ -14,7 +15,7 @@ namespace Patterns
             while (choose != "0")
             {
                 Console.Write("Выберите паттерн:\r\n1) Factory\r\n2) Abstract Factory\r\n" +
-                              "3) Singleton\r\n4) Observer\n\r" +
+                              "3) Singleton\r\n4) Observer\n\r5) Iterator\r\n" +
                               "0) Выход.\r\n" +
                               "Выбор: ");
                 choose = Console.ReadLine();
@@ -31,6 +32,9 @@ namespace Patterns
                         break;
                     case "4":
                         ObserverTest.Test();
+                        break;
+                    case "5":
+                        IteratorTest.Test();
                         break;
                 }
             }
