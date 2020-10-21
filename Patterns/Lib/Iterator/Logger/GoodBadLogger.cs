@@ -65,7 +65,7 @@ namespace Patterns.Lib.Iterator.Logger
 
         private void WriteLog(string message)
         {
-            var messageBytes = System.Text.Encoding.Default.GetBytes(message);
+            var messageBytes = System.Text.Encoding.UTF8.GetBytes(message);
             using (var fs = new FileStream(DefaultPath, FileMode.Append))
             {
                 fs.Write(messageBytes, 0, messageBytes.Length);
