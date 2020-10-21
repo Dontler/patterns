@@ -61,6 +61,10 @@
     <Compile Include="Lib\Observer\RuTube\Subscriber.cs" />
     <Compile Include="Lib\Observer\RuTube\Unsubscriber.cs" />
     <Compile Include="Lib\Observer\RuTube\Video.cs" />
+    <Compile Include="Lib\Proxy\ImprovedGreatClass.cs" />
+    <Compile Include="Lib\Proxy\ProxyTest.cs" />
+    <Compile Include="Lib\Proxy\Utils\GreatClass.cs" />
+    <Compile Include="Lib\Proxy\Utils\IGreatInterface.cs" />
     <Compile Include="Lib\Singleton\Entity.cs" />
     <Compile Include="Lib\Singleton\SingletonTest.cs" />
     <Compile Include="Program.cs" />
