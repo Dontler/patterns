@@ -62,6 +62,10 @@
     <Compile Include="Lib\Observer\RuTube\Subscriber.cs" />
     <Compile Include="Lib\Observer\RuTube\Unsubscriber.cs" />
     <Compile Include="Lib\Observer\RuTube\Video.cs" />
+    <Compile Include="Lib\Prototype\Geometric\Circle.cs" />
+    <Compile Include="Lib\Prototype\Geometric\IFigure.cs" />
+    <Compile Include="Lib\Prototype\Geometric\Point.cs" />
+    <Compile Include="Lib\Prototype\PrototypePresentation.cs" />
     <Compile Include="Lib\Proxy\ImprovedGreatClass.cs" />
     <Compile Include="Lib\Proxy\ProxyPresentation.cs" />
     <Compile Include="Lib\Proxy\Utils\GreatClass.cs" />

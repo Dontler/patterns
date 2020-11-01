@@ -4,6 +4,7 @@ using Patterns.Lib.AbstractFactory;
 using Patterns.Lib.Factory;
 using Patterns.Lib.Iterator;
 using Patterns.Lib.Observer;
+using Patterns.Lib.Prototype;
 using Patterns.Lib.Proxy;
 using Patterns.Lib.Singleton;
 
@@ -19,6 +20,7 @@ namespace Patterns
             {
                 Console.Write("Выберите паттерн:\r\n1) Factory\r\n2) Abstract Factory\r\n" +
                               "3) Singleton\r\n4) Observer\n\r5) Iterator\r\n6) Proxy\r\n" +
+                              "7) Prototype\r\n" +
                               "0) Выход.\r\n" +
                               "Выбор: ");
                 choose = Console.ReadLine();
@@ -41,6 +43,9 @@ namespace Patterns
                         break;
                     case "6":
                         PresentPattern(new ProxyPresentation());
+                        break;
+                    case "7":
+                        PresentPattern(new PrototypePresentation());
                         break;
                 }
             }
