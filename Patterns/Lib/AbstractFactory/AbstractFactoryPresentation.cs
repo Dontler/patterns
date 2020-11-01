@@ -3,9 +3,9 @@ using Patterns.Lib.AbstractFactory.Humans;
 
 namespace Patterns.Lib.AbstractFactory
 {
-    public class AbstractFactoryTest
+    public class AbstractFactoryPresentation : IPresentation
     {
-        public static void Test()
+        public void Present()
         {
             var rand = new Random();
             for (int i = 0; i < 5; i++)
@@ -16,8 +16,8 @@ namespace Patterns.Lib.AbstractFactory
                 Console.WriteLine(human.SayFirstWord());
             }
         }
-
-        private static Mother GenerateMother(Nationality nationality)
+        
+        private Mother GenerateMother(Nationality nationality)
         {
             switch (nationality)
             {

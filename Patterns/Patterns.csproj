@@ -38,7 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lib\AbstractFactory\AbstractFactoryTest.cs" />
+    <Compile Include="Lib\AbstractFactory\AbstractFactoryPresentation.cs" />
     <Compile Include="Lib\AbstractFactory\Humans\AmericanHuman.cs" />
     <Compile Include="Lib\AbstractFactory\Humans\AmericanMother.cs" />
     <Compile Include="Lib\AbstractFactory\Humans\Human.cs" />
@@ -46,27 +46,28 @@
     <Compile Include="Lib\AbstractFactory\Humans\Nationality.cs" />
     <Compile Include="Lib\AbstractFactory\Humans\RussianHuman.cs" />
     <Compile Include="Lib\AbstractFactory\Humans\RussianMother.cs" />
-    <Compile Include="Lib\Factory\FactoryTest.cs" />
+    <Compile Include="Lib\Factory\FactoryPresentation.cs" />
     <Compile Include="Lib\Factory\VehicleFactory.cs" />
     <Compile Include="Lib\Factory\Vehicles\Car.cs" />
     <Compile Include="Lib\Factory\Vehicles\Motorcycle.cs" />
     <Compile Include="Lib\Factory\Vehicles\Vehicle.cs" />
     <Compile Include="Lib\Factory\Vehicles\VehicleType.cs" />
-    <Compile Include="Lib\Iterator\IteratorTest.cs" />
+    <Compile Include="Lib\IPresentation.cs" />
+    <Compile Include="Lib\Iterator\IteratorPresentation.cs" />
     <Compile Include="Lib\Iterator\Logger\GoodBadLogger.cs" />
     <Compile Include="Lib\Iterator\Logger\GoodBadLoggerIterator.cs" />
     <Compile Include="Lib\Iterator\Logger\LogType.cs" />
-    <Compile Include="Lib\Observer\ObserverTest.cs" />
+    <Compile Include="Lib\Observer\ObserverPresentation.cs" />
     <Compile Include="Lib\Observer\RuTube\Channel.cs" />
     <Compile Include="Lib\Observer\RuTube\Subscriber.cs" />
     <Compile Include="Lib\Observer\RuTube\Unsubscriber.cs" />
     <Compile Include="Lib\Observer\RuTube\Video.cs" />
     <Compile Include="Lib\Proxy\ImprovedGreatClass.cs" />
-    <Compile Include="Lib\Proxy\ProxyTest.cs" />
+    <Compile Include="Lib\Proxy\ProxyPresentation.cs" />
     <Compile Include="Lib\Proxy\Utils\GreatClass.cs" />
     <Compile Include="Lib\Proxy\Utils\IGreatInterface.cs" />
     <Compile Include="Lib\Singleton\Entity.cs" />
-    <Compile Include="Lib\Singleton\SingletonTest.cs" />
+    <Compile Include="Lib\Singleton\SingletonPresentation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

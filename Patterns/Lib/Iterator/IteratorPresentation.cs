@@ -3,9 +3,9 @@ using Patterns.Lib.Iterator.Logger;
 
 namespace Patterns.Lib.Iterator
 {
-    public static class IteratorTest
+    public class IteratorPresentation : IPresentation
     {
-        public static void Test()
+        public void Present()
         {
             var logger = LogGenerator();
             Console.WriteLine("Все логи:");
@@ -28,8 +28,7 @@ namespace Patterns.Lib.Iterator
                 Console.WriteLine(log);
             }
         }
-
-        private static GoodBadLogger LogGenerator()
+        private GoodBadLogger LogGenerator()
         {
             var logger = new GoodBadLogger();
             logger.LoadLogs();

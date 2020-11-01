@@ -2,9 +2,9 @@
 
 namespace Patterns.Lib.Observer
 {
-    public class ObserverTest
+    public class ObserverPresentation : IPresentation
     {
-        public static void Test()
+        public void Present()
         {
             var channel = new Channel("The First");
             var lyuba = new Subscriber();

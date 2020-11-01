@@ -2,15 +2,15 @@
 
 namespace Patterns.Lib.Proxy
 {
-    public static class ProxyTest
+    public class ProxyPresentation : IPresentation
     {
-        public static void Test()
+        public void Present()
         {
             var greatClass = InstantiateGreatClass();
             greatClass.PrintHelloWorld();
         }
-
-        private static IGreatInterface InstantiateGreatClass()
+        
+        private IGreatInterface InstantiateGreatClass()
         {
             return new ImprovedGreatClass(new GreatClass());
         }

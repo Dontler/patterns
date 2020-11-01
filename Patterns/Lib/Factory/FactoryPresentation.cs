@@ -3,9 +3,9 @@ using Patterns.Lib.Factory.Vehicles;
 
 namespace Patterns.Lib.Factory
 {
-    public class FactoryTest
+    public class FactoryPresentation : IPresentation
     {
-        public static void Test()
+        public void Present()
         {
             var rand = new Random();
             for (int i = 0; i < 5; i++)
@@ -16,7 +16,7 @@ namespace Patterns.Lib.Factory
             }
         }
 
-        private static Vehicle CreateRandomVehicle(VehicleType type)
+        private Vehicle CreateRandomVehicle(VehicleType type)
         {
             var factory = new VehicleFactory();
             return factory.InstantiateVehicleByType(type);

@@ -1,4 +1,5 @@
 ﻿using System;
+using Patterns.Lib;
 using Patterns.Lib.AbstractFactory;
 using Patterns.Lib.Factory;
 using Patterns.Lib.Iterator;
@@ -24,25 +25,30 @@ namespace Patterns
                 switch (choose)
                 {
                     case "1":
-                        FactoryTest.Test();
+                        PresentPattern(new FactoryPresentation());
                         break;
                     case "2":
-                        AbstractFactoryTest.Test();
+                        PresentPattern(new AbstractFactoryPresentation());
                         break;
                     case "3":
-                        SingletonTest.Test();
+                        PresentPattern(new SingletonPresentation());
                         break;
                     case "4":
-                        ObserverTest.Test();
+                        PresentPattern(new ObserverPresentation());
                         break;
                     case "5":
-                        IteratorTest.Test();
+                        PresentPattern(new IteratorPresentation());
                         break;
                     case "6":
-                        ProxyTest.Test();
+                        PresentPattern(new ProxyPresentation());
                         break;
                 }
             }
+        }
+
+        private static void PresentPattern(IPresentation presentation)
+        {
+            presentation.Present();
         }
     }
 }

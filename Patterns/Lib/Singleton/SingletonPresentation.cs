@@ -2,9 +2,9 @@
 
 namespace Patterns.Lib.Singleton
 {
-    public class SingletonTest
+    public class SingletonPresentation : IPresentation
     {
-        public static void Test()
+        public void Present()
         {
             var entity = Entity.GetInstance();
             Console.WriteLine(entity.Message);
